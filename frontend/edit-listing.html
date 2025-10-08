@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Listing - Auction Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Auction Site</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="listings.html">Listings</a>
+            <a href="add-listing.html" id="addListingLink" style="display: none;">Add Listing</a>
+            <a href="login.html" id="loginLink">Login</a>
+            <a href="#" id="logoutLink" style="display: none;">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <div class="form-container">
+            <h2>Edit Listing</h2>
+            <form id="editListingForm">
+                <input type="text" id="title" placeholder="Listing Title" required />
+                <textarea id="description" placeholder="Detailed Description" required></textarea>
+                <input type="number" id="startPrice" placeholder="Starting Price" required />
+                <label for="startTime">Auction Start Time:</label>
+                <input type="datetime-local" id="startTime" required />
+                <label for="endTime">Auction End Time:</label>
+                <input type="datetime-local" id="endTime" required />
+                <button type="submit">Update Listing</button>
+            </form>
+            <p id="listingMsg"></p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Auction Site</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
